@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8080/rms/';
+$config['base_url']	= 'http://localhost/rms/admin';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ $config['base_url']	= 'http://localhost:8080/rms/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
