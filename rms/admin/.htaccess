@@ -1,0 +1,20 @@
+#RewriteEngine on
+RewriteCond $1 !^(index\.php|public|\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1
+
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|index)
+#AddHandler php5-script .php
+#RewriteRule ^index$ index.php [L]
+#RewriteRule ^index/(.*)$ index.php/$1 [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ index_client.php/$1 [L]
+
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php)
+#RewriteRule ^([^/]+)/(.*)?$ - [E=PATH_APPLICATION:$1,NE]
+
+#RewriteCond $1 !^(index\.php)
+#RewriteRule ^([^/]+)/(.*)?$ /index.php?/$2 [L]

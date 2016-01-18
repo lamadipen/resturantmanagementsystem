@@ -56,8 +56,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-
-	$system_path = 'system';
+	$system_path = '../system';
 
 /*
  *---------------------------------------------------------------
@@ -73,10 +72,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	//$application_folder = 'application';
-    $application_folder = 'client_application';
-    
-    //$application_folder = $_SERVER['REDIRECT_PATH_APPLICATION'];
+	$application_folder = 'admin_app';
 
 /*
  * --------------------------------------------------------------------
